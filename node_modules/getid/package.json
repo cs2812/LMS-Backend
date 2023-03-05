@@ -1,0 +1,11 @@
+{
+  "name": "getid",
+  "version": "0.1.0",
+  "description": "Generate a random ID",
+  "main": "index.js",
+  "repository": {"type": "git", "url": "https://github.com/jmjuanes/getid.git"},
+  "keywords": ["random", "id", "string", "genid", "getid", "jmjuanes"],
+  "author": "Josemi Juanes <josemijuanes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
