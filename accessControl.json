@@ -1,0 +1,14 @@
+{
+    "student":{
+        "assignment":"RW",
+        "lecture":"R"
+    },
+    "instructor":{
+        "assignment":"RWDU",
+        "lecture":"RWDU"
+    },
+    "admin":{
+        "assignment":"RWDU",
+        "lecture":"RWDU"
+    }
+}
