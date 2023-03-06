@@ -1,11 +1,14 @@
 const express = require("express")
 const initDB = require("./config");
+const mongoose = require("mongoose");
 const cors = require("cors")
 const userRoutes = require("./routes/authRoutes");
 const StuAssiRoutes = require("./routes/Assignment/stu_assing_Routes");
 const AssignmentRoutes = require("./routes/Assignment/assignment_Routes");
 const lectureRoutes = require("./routes/lectureRoutes");
 const problemRoutes = require("./routes/problemRoutes");
+mongoose.set('strictQuery', true);
+
 
 require("dotenv").config()
 let port =process.env.PORT||8080;
@@ -25,7 +28,7 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(port,async()=>{
-    // await mongoose.connect("mongodb+srv://chetan:chetan2812@cluster0.lmm0tfr.mongodb.net/test")
-    await initDB()
+    await mongoose.connect("mongodb+srv://chetan:chetan2812@cluster0.lmm0tfr.mongodb.net/test")
+    // await initDB()
     console.log("server is running on",`${port}`)
 })
